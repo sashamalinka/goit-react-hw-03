@@ -21,7 +21,7 @@ const App = () => {
 
   useEffect(() => {
     const contactsData = JSON.stringify(contacts);
-    window.localStorage.setItem('contactsData', contactsData);
+    window.localStorage.setItem('contacts-data', contactsData);
   }, [contacts]);
 
   const filterContact = contacts.filter((contact) =>
